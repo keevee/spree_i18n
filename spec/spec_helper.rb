@@ -6,6 +6,7 @@ require File.expand_path('../dummy/config/environment.rb',  __FILE__)
 # in spec/support/ and its subdirectories.
 Dir[File.join(File.dirname(__FILE__), "/support/**/*.rb")].each {|f| require f}
 
+require 'pry'
 require 'i18n-spec'
 require 'ffaker'
 require 'rspec/rails'
@@ -29,6 +30,7 @@ RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
   config.include Spree::TestingSupport::UrlHelpers
   config.include Spree::TestingSupport::Preferences
+  config.include Spree::TestingSupport::ControllerRequests, :type => :controller
 
   config.extend Spree::TestingSupport::AuthorizationHelpers::Request, type: :feature
 end
