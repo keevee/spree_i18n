@@ -348,6 +348,14 @@ ru:
     analytics_desc_list_4: Полностью бесплатный!
     analytics_trackers: Трекеры веб-аналитики
     and: и
+    api:
+      access: Доступ к API
+      key: Токен
+      no_key: Токен отсутствует
+      generate_key: Сгенерировать токен
+      clear_key: Удалить токен
+      regenerate_key: Новый токен
+
     are_you_sure: Вы уверены
     are_you_sure_delete: Вы уверены, что хотите удалить эту запись?
     associated_adjustment_closed: Связанная корректировка закрыта, и не будет пересчитана. Хотите ли вы открыть её?
@@ -760,6 +768,7 @@ ru:
     order_populator:
       out_of_stock: ! 'На складе не хватает товара: %{item}.'
       please_enter_reasonable_quantity: ! 'Введите, пожалуйста, правильное количество товара. '
+      selected_quantity_not_available: Товара нет в нужном количестве.
     order_processed_successfully: Ваш заказ был успешно обработан
     order_state:
       address: Адрес
