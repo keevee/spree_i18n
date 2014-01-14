@@ -28,6 +28,7 @@ describe "Translations" do
       end
     end
 
+
     context "option types" do
       let!(:option_type) { create(:option_value).option_type }
 
@@ -150,6 +151,30 @@ describe "Translations" do
       SpreeI18n::Config.available_locales.should include(:fr)
     end
   end
+
+  context "permalink routing", js: true do
+    let(:language) { Spree.t(:'i18n.this_file_language', locale: 'de') }
+    let(:product) { create(:product) }
+
+    it "finds the right product with permalink in a not active language" do
+      SpreeI18n::Config.available_locales = [:en, :de]
+      visit spree.admin_product_path(product)
+      click_on "Translations"
+      click_on "Permalink"
+      within("#attr_fields .permalink.en.odd") { fill_in_name "en_link" }
+      within("#attr_fields .permalink.de.odd") { fill_in_name "de_link" }
+      click_on "Update"
+
+      visit spree.product_path 'en_link'
+      page.should have_content('Product')
+
+      #this fails because the user locale is English and it doesn't find the German permalink
+      visit spree.product_path 'de_link'
+      page.should have_content('Produkt')
+
+    end
+  end
+
 
   # sleep 1 second to make sure the ajax request process properly
   def change_locale
