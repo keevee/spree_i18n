@@ -264,9 +264,9 @@ fa:
       list: لیست
       listing: لیست کردن
       new: جدید
-      save: 
+      save: ذخیره
       update: بروز رسانی
-    activate: Activate
+    activate: فعال سازی
     active: فعال
     add: افزودن
     add_action_of_type: Add action of type
@@ -294,19 +294,19 @@ fa:
     adjustments: تعدیلات
     admin:
       mail_methods:
-        send_testmail: Send Testmail
+        send_testmail: ارسال ایمیل آزمایشی
         testmail:
-          delivery_error: Testmail delivery error
-          delivery_success: Testmail sent successfully
-          error: ! 'Testmail error: %{e}'
+          delivery_error: خطا در تحویل ایمیل آزمایشی
+          delivery_success: ایمیل آزمایشی با موفقیت ارسال شد
+          error: ! 'خطای ایمیل آزمایشی: %{e}'
       tab:
-        configuration: 
+        configuration: پیکر بندی
         orders: 
         overview: 
-        products: 
+        products: محصولات
         promotions: 
-        reports: 
-        users: 
+        reports: گزارشات
+        users: کاربران
     administration: مدیریت
     agree_to_privacy_policy: 
     agree_to_terms_of_service: 
@@ -342,16 +342,16 @@ fa:
     back: برگشت
     back_end: Back End
     back_to_adjustments_list: Back To Adjustments List
-    back_to_images_list: Back To Images List
+    back_to_images_list: بازگشت به لیست تصاویر
     back_to_option_types_list: 
     back_to_orders_list: 
-    back_to_payment_methods_list: Back To Payment Methods List
-    back_to_payments_list: Back To Payments List
-    back_to_products_list: Back To Products List
+    back_to_payment_methods_list: بازگشت به لیست روش های پرداخت
+    back_to_payments_list: بازگشت به لیست پرداخت ها
+    back_to_products_list: بازگشت به لیست محصولات
     back_to_promotions_list: Back To Promotions List
-    back_to_properties_list: Back To Products List
+    back_to_properties_list: Back To properties List
     back_to_prototypes_list: Back To Prototypes List
-    back_to_reports_list: Back To Reports List
+    back_to_reports_list: بازگشت به لیست گزارشات
     back_to_shipping_categories: Back To Shipping Categories
     back_to_shipping_methods_list: Back To Shipping Methods List
     back_to_states_list: Back To States List
@@ -444,7 +444,7 @@ fa:
     current_promotion_usage: 
     customer: مشتری
     customer_details: جزئیات مشتری
-    customer_details_updated: The customer's details have been updated.
+    customer_details_updated: اطلاعات مشتری بروزرسانی شد.
     customer_search: جستجوی مشتری
     cut: Cut
     dash:
@@ -477,9 +477,9 @@ fa:
     destination: 
     destroy: پاک کردن
     discount_amount: مقدار تخفیف
-    dismiss_banner: No. Thanks! I'm not interested, do not display this message again
+    dismiss_banner: نخیر. متشکر! علاقمند نیستم. لطفا دوباره نمایش داده نشود.
     display: نمایش
-    display_currency: Display currency
+    display_currency: نمایش واحد پول
     edit: ویرایش
     editing_option_type: ویرایش نوع انتخاب
     editing_payment_method: ویرایش متد پرداخت
@@ -572,8 +572,8 @@ fa:
       translations: 
     icon: آیکون
     image: تصویر
-    image_settings: Image Settings
-    image_settings_updated: Image Settings successfully updated.
+    image_settings: تنظیمات تصویر
+    image_settings_updated: تنظیمات تصویر با موفقیت بروزرسانی شد..
     image_settings_warning: You will need to regenerate thumbnails if you update the paperclip styles. Use rake paperclip:refresh:thumbnails to do this.
     images: تصاویر
     included_in_price: Included in Price
@@ -692,7 +692,7 @@ fa:
     not: not
     not_available: N/A
     not_enough_stock: 
-    not_found: ! '%{resource} is not found'
+    not_found: ! '%{resource} یافت نشد.'
     notice_messages:
       product_cloned: Product has been cloned
       product_deleted: محصول حذف شد
@@ -711,7 +711,7 @@ fa:
     optional: 
     options: Options
     or: یا
-    or_over_price: ! '%{price} or over'
+    or_over_price: ! '%{price} یا بیشتر'
     order: سفارش
     order_adjustments: Order adjustments
     order_details: جزئیات سفارش
@@ -726,12 +726,12 @@ fa:
         subtotal: 
         total: 
       confirm_email:
-        dear_customer: Dear Customer,
-        instructions: Please review and retain the following order information for your records.
-        order_summary: Order Summary
+        dear_customer: مشتری گرامی,
+        instructions: لطفا به اطلاعات این سفارش دقت کنید و آنرا نزد خود نگهداری نمایید.
+        order_summary: خلاصه سفارش
         subject: تایید سفارش
         subtotal: 
-        thanks: Thank you for your business.
+        thanks: بسیار متشکر.
         total: 
     order_not_found: 
     order_number: سفارش
@@ -748,7 +748,7 @@ fa:
       confirm: تایید
       delivery: تحویل
       payment: پرداخت
-      resumed: resumed
+      resumed: از سر گرفته شده
       returned: برگشت خورد
     order_summary: خلاصه سفارش
     order_sure_want_to: 
@@ -798,7 +798,7 @@ fa:
     presentation: Presentation
     previous: قبلی
     price: قیمت
-    price_range: Price Range
+    price_range: بازه قیمت
     price_sack: Price Sack
     process: پردازش
     product: محصول
@@ -850,7 +850,7 @@ fa:
         description: Available only to the specified users
         name: User
       user_logged_in:
-        description: Available only to logged in users
+        description: فقط برای کاربران لاگین شده در دسترس است.
         name: User Logged In
     promotions: Promotions
     properties: Properties
@@ -873,14 +873,14 @@ fa:
     register: به عنوان کاربر جدید ثبت نام کنید
     registration: ثبت نام
     remember_me: من را به یاد بسپار
-    remove: Remove
-    rename: Rename
+    remove: حذف
+    rename: تغییر نام
     reports: گزارشات
-    resend: Resend
+    resend: ارسال مجدد
     reset_password: ریست رمز عبور
-    response_code: Response Code
+    response_code: کد پاسخ
     resume: ادامه
-    resumed: Resumed
+    resumed: از سر گرفته شده
     return: برگشت
     return_authorization: Return Authorization
     return_authorization_updated: Return authorization updated
@@ -919,17 +919,17 @@ fa:
     server_error: سرور با ایراد مواجه شد
     settings: تنظیمات
     ship: ارسال
-    ship_address: Ship Address
+    ship_address: آدرس پستی
     ship_total: 
     shipment: 
     shipment_inc_vat: Shipment including VAT
     shipment_mailer:
       shipped_email:
-        dear_customer: Dear Customer,
-        instructions: Your order has been shipped
-        shipment_summary: Shipment Summary
+        dear_customer: مشترک گرامی,
+        instructions: سفارش شما ارسال شد
+        shipment_summary: خلاصه ارسال سفارش
         subject: Shipment Notification
-        thanks: Thank you for your business.
+        thanks: متشکر.
         track_information: ! 'Tracking Information: %{tracking}'
         track_link: 
     shipment_state: Shipment State
